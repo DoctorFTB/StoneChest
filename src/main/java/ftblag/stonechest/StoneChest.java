@@ -30,7 +30,6 @@ public class StoneChest {
     public static final String MODID = "stonechest", NAME = "Stone Chest";
     public static ItemChestPart[] parts = new ItemChestPart[EnumStoneChest.values().length];
     public static BlockStoneChest[] chests = new BlockStoneChest[EnumStoneChest.values().length];
-    public static TEISRChest TEISR = new TEISRChest();
 
     private static ItemStack getBlock(EnumStoneChest type) {
         switch (type) {
@@ -76,6 +75,7 @@ public class StoneChest {
 
     @SideOnly(Side.CLIENT)
     public void preInit() {
+        TEISRChest TEISR = new TEISRChest();
         for (BlockStoneChest chest : chests) {
             Item item = Item.getItemFromBlock(chest);
             ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(chest.getRegistryName(), "inventory"));
