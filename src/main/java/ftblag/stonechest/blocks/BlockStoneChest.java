@@ -18,15 +18,18 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.ILockableContainer;
 import net.minecraft.world.World;
+import net.minecraftforge.common.util.EnumHelper;
 
 import javax.annotation.Nullable;
 
 public class BlockStoneChest extends BlockChest {
 
+    public static final Type TYPE_STONE = EnumHelper.addEnum(Type.class, "STONE", new Class[0]);
+
     public EnumStoneChest type;
 
     public BlockStoneChest(EnumStoneChest type, String name) {
-        super(Type.BASIC);
+        super(TYPE_STONE);
         this.type = type;
         setTranslationKey(name);
         setRegistryName(StoneChest.MODID, name);
