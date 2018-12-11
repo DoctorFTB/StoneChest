@@ -80,18 +80,18 @@ public class BlockStoneChest extends BlockChest {
         } else if (enumfacing.getAxis() != EnumFacing.Axis.X || !flagN && !flagS) {
             if (enumfacing.getAxis() == EnumFacing.Axis.Z && (flagW || flagE)) {
                 if (flagW) {
-                    worldIn.setBlockState(westBP, state, 3);
+                    setBlockState(worldIn, westBP, state, 3);
                 } else {
-                    worldIn.setBlockState(eastBP, state, 3);
+                    setBlockState(worldIn, eastBP, state, 3);
                 }
 
                 worldIn.setBlockState(pos, state, 3);
             }
         } else {
             if (flagN) {
-                worldIn.setBlockState(northBP, state, 3);
+                setBlockState(worldIn, northBP, state, 3);
             } else {
-                worldIn.setBlockState(southBP, state, 3);
+                setBlockState(worldIn, southBP, state, 3);
             }
 
             worldIn.setBlockState(pos, state, 3);
@@ -103,6 +103,17 @@ public class BlockStoneChest extends BlockChest {
             if (tileentity instanceof TileEntityStoneChest) {
                 ((TileEntityStoneChest) tileentity).setCustomName(stack.getDisplayName());
             }
+        }
+    }
+
+    private void setBlockState(World world, BlockPos pos, IBlockState state, int flag) {
+        TileEntity te = world.getTileEntity(pos);
+        world.setBlockState(pos, state, flag);
+        if (te != null) {
+            te.validate();
+            world.setTileEntity(pos, te);
+            if(te instanceof TileEntityStoneChest)
+                ((TileEntityStoneChest) te).adjacentChestChecked = false;
         }
     }
 
@@ -176,7 +187,7 @@ public class BlockStoneChest extends BlockChest {
             }
 
             state = state.withProperty(FACING, enumfacing);
-            worldIn.setBlockState(pos, state, 3);
+            setBlockState(worldIn, pos, state, 3);
             return state;
         }
     }
