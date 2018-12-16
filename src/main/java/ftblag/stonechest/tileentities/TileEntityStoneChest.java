@@ -3,6 +3,7 @@ package ftblag.stonechest.tileentities;
 import ftblag.stonechest.blocks.BlockStoneChest;
 import ftblag.stonechest.blocks.EnumStoneChest;
 import net.minecraft.block.Block;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.util.EnumFacing;
@@ -126,6 +127,11 @@ public class TileEntityStoneChest extends TileEntityChest {
             this.type = ((BlockStoneChest) this.getBlockType()).type;
         }
         return this.type;
+    }
+
+    @Override
+    public boolean shouldRefresh(World world, BlockPos pos, IBlockState oldState, IBlockState newState) {
+        return oldState.getBlock() != newState.getBlock();
     }
 
     @Override
