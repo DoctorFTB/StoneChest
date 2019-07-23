@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+issueTrackerURL="https://github.com/DoctorFTB/StoneChest/issues"
+[[mods]]
+modId="stonechest"
+version="${file.jarVersion}"
+displayName="Stone Chest"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/stone-chest"
+credits=""
+authors="FTB_lag"
+description='''
+Stone variations vanilla chests.
+'''
