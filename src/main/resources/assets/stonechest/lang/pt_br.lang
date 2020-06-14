@@ -1,0 +1,10 @@
+tile.chest_andesite.name=Baú de Andesito
+tile.chest_cobblestone.name=Baú de Pedregulho
+tile.chest_diorite.name=Baú de Diorito
+tile.chest_granite.name=Baú de Granito
+tile.chest_stone.name=Baú de Pedra
+item.part_andesite.name=Parte de Andesito
+item.part_cobblestone.name=Parte de Pedregulho
+item.part_diorite.name=Parte de Diorito
+item.part_granite.name=Parte de Granito
+item.part_stone.name=Parte de Pedra
