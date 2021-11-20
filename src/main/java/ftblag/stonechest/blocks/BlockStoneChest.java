@@ -8,13 +8,12 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
-import net.minecraftforge.common.ToolType;
 
 public class BlockStoneChest extends ChestBlock {
     private final EnumStoneChest chestType;
 
     public BlockStoneChest(EnumStoneChest chestType) {
-        super(Properties.of(Material.STONE).strength(2.5F).sound(SoundType.STONE).harvestTool(ToolType.PICKAXE), () -> StoneChest.chestTileType);
+        super(Properties.of(Material.STONE).strength(2.5F).sound(SoundType.STONE), () -> StoneChest.chestTileType);
         this.chestType = chestType;
         this.setRegistryName(StoneChest.MODID, "chest_" + chestType.name().toLowerCase());
     }
