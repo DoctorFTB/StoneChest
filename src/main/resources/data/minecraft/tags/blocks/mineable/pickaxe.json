@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "stonechest:chest_andesite",
+    "stonechest:chest_cobblestone",
+    "stonechest:chest_diorite",
+    "stonechest:chest_granite",
+    "stonechest:chest_stone"
+  ]
+}
