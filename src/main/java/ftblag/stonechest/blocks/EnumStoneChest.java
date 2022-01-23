@@ -1,9 +1,14 @@
 package ftblag.stonechest.blocks;
 
 public enum EnumStoneChest {
-    COBBLESTONE,
-    STONE,
-    GRANITE,
-    DIORITE,
-    ANDESITE
+      ANDESITE,
+      CALCITE,
+      COBBLED_DEEPSLATE,
+      COBBLESTONE,
+      DEEPSLATE,
+      DIORITE,
+      GRANITE,
+      PRISMARINE,
+      STONE,
+      TUFF,
 }

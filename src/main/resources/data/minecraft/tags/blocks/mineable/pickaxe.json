@@ -2,9 +2,14 @@
   "replace": false,
   "values": [
     "stonechest:chest_andesite",
+    "stonechest:chest_calcite",
+    "stonechest:chest_cobbled_deepslate",
     "stonechest:chest_cobblestone",
+    "stonechest:chest_deepslate",
     "stonechest:chest_diorite",
     "stonechest:chest_granite",
-    "stonechest:chest_stone"
+    "stonechest:chest_prismarine",
+    "stonechest:chest_stone",
+    "stonechest:chest_tuff"
   ]
 }
