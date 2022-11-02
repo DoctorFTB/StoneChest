@@ -17,6 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.function.Consumer;
 
 public class SCRegistry {
@@ -29,9 +30,9 @@ public class SCRegistry {
 
     public static void register() {
         for (EnumStoneChest type : EnumStoneChest.VALUES) {
-            ITEMS.register("part_" + type.name().toLowerCase(), () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+            ITEMS.register("part_" + type.name().toLowerCase(Locale.ENGLISH), () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
-            String name = "chest_" + type.name().toLowerCase();
+            String name = "chest_" + type.name().toLowerCase(Locale.ENGLISH);
 
             RegistryObject<BlockStoneChest> chestObject = BLOCKS.register(name, () -> new BlockStoneChest(type));
             chests[type.ordinal()] = chestObject;

@@ -12,6 +12,8 @@ import net.minecraft.world.level.block.state.properties.ChestType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+import java.util.Locale;
+
 @OnlyIn(Dist.CLIENT)
 public class TileEntityStoneChestRenderer extends ChestRenderer<TileEntityStoneChest> {
     public static Material[] single = new Material[EnumStoneChest.VALUES.length];
@@ -20,9 +22,9 @@ public class TileEntityStoneChestRenderer extends ChestRenderer<TileEntityStoneC
 
     static {
         for (EnumStoneChest type : EnumStoneChest.VALUES) {
-            single[type.ordinal()] = getChestMaterial(type.name().toLowerCase());
-            left[type.ordinal()] = getChestMaterial(type.name().toLowerCase() + "_left");
-            right[type.ordinal()] = getChestMaterial(type.name().toLowerCase() + "_right");
+            single[type.ordinal()] = getChestMaterial(type.name().toLowerCase(Locale.ENGLISH));
+            left[type.ordinal()] = getChestMaterial(type.name().toLowerCase(Locale.ENGLISH) + "_left");
+            right[type.ordinal()] = getChestMaterial(type.name().toLowerCase(Locale.ENGLISH) + "_right");
         }
     }
 
