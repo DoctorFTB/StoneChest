@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "stonechest:item/part_cobbled_deepslate"
+  }
+}

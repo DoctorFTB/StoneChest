@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "stonechest:part_granite"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "stonechest:chest_granite"
+  }
+}
