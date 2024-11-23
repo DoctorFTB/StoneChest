@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "stonechest:chest_andesite",
+    "stonechest:chest_calcite",
+    "stonechest:chest_cobbled_deepslate",
+    "stonechest:chest_cobblestone",
+    "stonechest:chest_dark_prismarine",
+    "stonechest:chest_deepslate",
+    "stonechest:chest_deepslate_bricks",
+    "stonechest:chest_diorite",
+    "stonechest:chest_dripstone",
+    "stonechest:chest_granite",
+    "stonechest:chest_mossy_cobblestone",
+    "stonechest:chest_mossy_stone_bricks",
+    "stonechest:chest_prismarine",
+    "stonechest:chest_prismarine_bricks",
+    "stonechest:chest_smooth_stone",
+    "stonechest:chest_stone",
+    "stonechest:chest_stone_bricks",
+    "stonechest:chest_tuff"
+  ]
+}

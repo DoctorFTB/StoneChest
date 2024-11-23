@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "stonechest:part_calcite"
+  },
+  "result": {
+    "count": 1,
+    "id": "stonechest:chest_calcite"
+  }
+}
