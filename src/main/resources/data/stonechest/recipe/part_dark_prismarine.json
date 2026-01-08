@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:dark_prismarine"
+  },
+  "result": {
+    "id": "stonechest:part_dark_prismarine"
+  }
+}
