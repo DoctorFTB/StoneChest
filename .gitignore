@@ -1,0 +1,14 @@
+.DS_Store
+
+out
+.idea
+
+build
+.gradle
+
+run
+runs
+run-data
+
+repo
+
