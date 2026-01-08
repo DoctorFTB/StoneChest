@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "stonechest:part_andesite"
+    }
+  },
+  "result": {
+    "item": "stonechest:chest_andesite"
+  }
+}

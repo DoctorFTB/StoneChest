@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "stonechest:part_cobbled_deepslate"
+    }
+  },
+  "result": {
+    "item": "stonechest:chest_cobbled_deepslate"
+  }
+}
