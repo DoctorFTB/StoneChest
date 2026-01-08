@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "stonechest:item/chest_chiseled_stone_bricks",
+    "model": {
+      "type": "minecraft:chest",
+      "texture": "stonechest:chiseled_stone_bricks"
+    }
+  }
+}
