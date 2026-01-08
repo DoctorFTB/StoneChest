@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "stonechest:block/chest_cobblestone"
+    }
+  }
+}
