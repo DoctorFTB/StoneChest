@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "stonechest:item/chest_deepslate_tiles",
+    "model": {
+      "type": "minecraft:chest",
+      "texture": "stonechest:deepslate_tiles"
+    }
+  }
+}
