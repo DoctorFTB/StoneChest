@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:mossy_stone_bricks"
+  },
+  "result": {
+    "id": "stonechest:part_mossy_stone_bricks"
+  }
+}
