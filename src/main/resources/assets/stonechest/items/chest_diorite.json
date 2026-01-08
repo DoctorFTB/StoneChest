@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "stonechest:item/chest_diorite",
+    "model": {
+      "type": "minecraft:chest",
+      "texture": "stonechest:diorite"
+    }
+  }
+}
