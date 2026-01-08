@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:prismarine_bricks"
+  },
+  "result": {
+    "id": "stonechest:part_prismarine_bricks"
+  }
+}
