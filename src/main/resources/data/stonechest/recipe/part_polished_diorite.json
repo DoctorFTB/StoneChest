@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:polished_diorite"
+  },
+  "result": {
+    "id": "stonechest:part_polished_diorite"
+  }
+}
