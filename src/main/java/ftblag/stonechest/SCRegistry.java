@@ -9,9 +9,13 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.capabilities.Capabilities;
+import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
@@ -56,5 +60,13 @@ public class SCRegistry {
         BLOCKS.register(modEventBus);
         BLOCK_ENTITIES.register(modEventBus);
         ITEMS.register(modEventBus);
+
+        modEventBus.addListener((RegisterCapabilitiesEvent event) -> {
+            event.registerBlock(
+                    Capabilities.ItemHandler.BLOCK,
+                    (level, pos, state, be, side) -> new InvWrapper(ChestBlock.getContainer((ChestBlock) state.getBlock(), state, level, pos, true)),
+                    Arrays.stream(chests).map(DeferredHolder::get).toArray(Block[]::new)
+            );
+        });
     }
 }
