@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "stonechest:item/chest_cracked_deepslate_bricks",
+    "model": {
+      "type": "minecraft:chest",
+      "texture": "stonechest:cracked_deepslate_bricks"
+    }
+  }
+}

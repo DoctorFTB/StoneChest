@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:tuff_bricks"
+  },
+  "result": {
+    "id": "stonechest:part_tuff_bricks"
+  }
+}
