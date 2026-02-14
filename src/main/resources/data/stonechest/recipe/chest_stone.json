@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "stonechest:part_stone"
+  },
+  "result": {
+    "id": "stonechest:chest_stone"
+  }
+}
