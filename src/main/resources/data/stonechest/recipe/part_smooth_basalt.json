@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:smooth_basalt"
+  },
+  "result": {
+    "id": "stonechest:part_smooth_basalt"
+  }
+}
