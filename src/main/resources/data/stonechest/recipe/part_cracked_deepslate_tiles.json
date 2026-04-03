@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:cracked_deepslate_tiles"
+  },
+  "result": {
+    "id": "stonechest:part_cracked_deepslate_tiles"
+  }
+}

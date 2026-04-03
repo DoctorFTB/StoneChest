@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "stonechest",
+	"version": "${version}",
+	"name": "Stone Chest",
+	"description": "Stone variations vanilla chests.",
+	"authors": [
+		"FTB_lag"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/stone-chest",
+		"issues": "https://github.com/DoctorFTB/StoneChest/issues"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ftblag.stonechest.StoneChest"
+		],
+		"client": [
+			"ftblag.stonechest.StoneChestClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.5",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
