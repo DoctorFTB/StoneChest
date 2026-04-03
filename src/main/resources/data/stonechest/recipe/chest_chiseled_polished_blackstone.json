@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "stonechest:part_chiseled_polished_blackstone"
+  },
+  "result": {
+    "id": "stonechest:chest_chiseled_polished_blackstone"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "stonechest:item/chest_calcite",
+    "model": {
+      "type": "minecraft:chest",
+      "texture": "stonechest:calcite"
+    }
+  }
+}
