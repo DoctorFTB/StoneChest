@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    " #"
+  ],
+  "key": {
+    "#": "minecraft:cracked_stone_bricks"
+  },
+  "result": {
+    "id": "stonechest:part_cracked_stone_bricks"
+  }
+}
